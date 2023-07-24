@@ -9,7 +9,7 @@ Votre mission sera de terminer autant de TODO que possible.
 Vous les trouverez dans le code source de l'application React. Lorsque vous ouvrirez le dossier `/src` vous trouverez une application destinée aux utilisateurs souhaitant créer leur propre carnet d'adresses (comme montré dans la vidéo ci-dessus). Mais comme mentionné précédemment, il y a quelques TODO à compléter pour que l'application fonctionne comme prévu.
 
 À la fin, l'application devrait ressembler à la vidéo appelée `resultat-attendu.mov` à la racine de ce repo.
-Lien direct : https://streamable.com/o2d6yd
+Lien direct : [https://streamable.com/2gsz7m](https://streamable.com/2gsz7m)
 
 Pour commencer cette mission, vous devez :
 
