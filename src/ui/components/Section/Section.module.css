@@ -9,6 +9,12 @@
   width: 100%;
 }
 
+@media screen and (max-width: 500px) {
+  .section {
+    padding: 2rem;
+  }
+}
+
 .dark {
   --color-background: #141925;
   --color-text: #fff;

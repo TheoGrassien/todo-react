@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 
-import $ from "./InputText.module.css";
+import $ from './InputText.module.css';
 
 const InputText = ({ name, onChange, placeholder, value }) => {
   return (

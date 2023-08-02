@@ -1,20 +1,24 @@
-import React from "react";
-import cx from "classnames";
+import React from 'react';
+import cx from 'classnames';
 
-import $ from "./Button.module.css";
+import $ from './Button.module.css';
 
 const Button = ({
   children,
   onClick,
-  type = "button",
-  variant = "primary", // or 'secondary'
+  type = 'button',
+  variant = 'primary', // or 'secondary'
 }) => {
   return (
     <button
       // TODO: Ajouter des noms de classes conditionnelles
       // - Doit avoir une condition pour attribuer la classe '.primary'
       // - Doit avoir une condition pour attribuer la classe '.secondary'
-      className={$.button}
+
+      className={cx($.button, {
+        [$.primary]: variant === 'primary',
+        [$.secondary]: variant === 'secondary',
+      })}
       type={type}
       onClick={onClick}
     >

@@ -1,8 +1,9 @@
-
 /* TODO: Ajouter la police 'Roboto' depuis Google Font et l'ajouter en tant que variable CSS globale appelée `--font-primary` */
 /* TODO: Rendre l'application responsive. C'est le cas pour une grande partie de l'application, mais ce n'est pas optimal pour les écrans de petites tailles.
 * - Appuyez-vous sur le paradigme "Mobile first" pour rendre l'application responsive.
 */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 :root {
   --border-radius-default: 4px;
@@ -15,6 +16,7 @@
   --color-text-light: #72787d;
   --width-input: 20rem;
   --width-content: 30rem;
+  --font-primary: 'Roboto', sans-serif;
 }
 
 * {
@@ -32,31 +34,14 @@ main {
   padding: 2rem;
 }
 
+@media screen and (max-width: 500px) {
+  main {
+    padding: 0;
+  }
+}
+
 small {
   font-weight: normal;
   font-size: 0.65em;
   color: var(--color-text-light);
-}
-
-fieldset {
-  border: none;
-  border-bottom: 1px solid var(--color-accent);
-  border-top: 1px solid var(--color-accent);
-  margin: 2rem 0;
-  max-width: var(--width-input);
-  padding: 1rem 0;
-  width: 100%;
-}
-
-legend {
-  color: var(--color-text-light);
-}
-
-.error {
-  color: red;
-  padding: 0.5em 0;
-}
-
-.form-row {
-  margin-bottom: 0.5em;
 }
